@@ -72,6 +72,18 @@ src/
 tests/              # Playwright e2e tests
 ```
 
+## Tracing & Evaluation (LangSmith)
+
+Generation runs are traced in [LangSmith](https://smith.langchain.com) under the `my-first-agent` project. Each `cue.generate` run records the brief, the strategy, the drafted candidates, and the judge-gate step, along with per-run latency and feedback scores.
+
+**Trace list** — `cue.generate` runs filtered to `tag:eval` and `status:success`, all served by `gemini-3.1-flash-lite`:
+
+![LangSmith trace list showing cue.generate runs tagged eval](docs/screenshots/langsmith-trace-list.png)
+
+**Trace detail** — a single run's waterfall (`cue.draft` → `cue.triage` → `cue.judge_gate` → `cue.judge`) with the `ctas_kept` and `judge_mean` feedback scores, plus the input brief and output candidates:
+
+![LangSmith trace detail showing the cue.generate waterfall and feedback scores](docs/screenshots/langsmith-trace-detail.png)
+
 ## Scope
 
 Instagram-only by design — CTA phrasing, goals, and tone presets are tailored specifically to Instagram creator content (not repurposed for other platforms).
