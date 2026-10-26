@@ -1,4 +1,4 @@
-```tsx
+
 import type { Metadata } from "next";
 import {
   Schibsted_Grotesk,
@@ -42,4 +42,3 @@ export default function RootLayout({
     </html>
   );
 }
-```
