@@ -1,5 +1,10 @@
+```tsx
 import type { Metadata } from "next";
-import { Schibsted_Grotesk, Anybody, Geist_Mono } from "next/font/google";
+import {
+  Schibsted_Grotesk,
+  Anybody,
+  Geist_Mono,
+} from "next/font/google";
 import "./globals.css";
 
 const schibsted = Schibsted_Grotesk({
@@ -18,8 +23,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CreatorOS",
-  description: "An AI creative operating system",
+  title: "CreatorOS — Autonomous Content Pipeline",
+  description: "An AI-powered creative operating system for creators.",
 };
 
 export default function RootLayout({
@@ -28,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="min-h-full">
       <body
         className={`${schibsted.variable} ${anybody.variable} ${geistMono.variable} antialiased theme-dark min-h-screen`}
       >
@@ -37,3 +42,4 @@ export default function RootLayout({
     </html>
   );
 }
+```

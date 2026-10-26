@@ -1,3 +1,4 @@
+```json
 {
   "name": "web",
   "version": "0.1.0",
@@ -9,16 +10,20 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@better-auth/mongo-adapter": "^1.7.6",
+    "@contentyou/ui": "workspace:*",
     "@hookform/resolvers": "^5.9.1",
     "@studio-freight/lenis": "^1.0.42",
     "@tiptap/pm": "^3.31.4",
     "@tiptap/react": "^3.31.4",
     "@tiptap/starter-kit": "^3.31.4",
     "@types/three": "^0.186.0",
+    "better-auth": "^1.7.6",
     "framer-motion": "^14.0.0",
     "gsap": "^3.15.0",
     "lucide-react": "^1.52.0",
-    "next": "16.3.8",
+    "mongodb": "^7.6.0",
+    "next": "CHECK_LOCKFILE",
     "openapi-fetch": "^0.17.0",
     "openapi-typescript": "^7.13.0",
     "react": "19.2.8",
@@ -35,9 +40,9 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.3.8",
+    "eslint-config-next": "CHECK_LOCKFILE",
     "tailwindcss": "^4",
     "typescript": "^5"
-  },
-  "packageManager": "pnpm@9.0.0"
+  }
 }
+```
