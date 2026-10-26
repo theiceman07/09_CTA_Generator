@@ -1,4 +1,3 @@
-```json
 {
   "name": "web",
   "version": "0.1.0",
@@ -23,7 +22,7 @@
     "gsap": "^3.15.0",
     "lucide-react": "^1.52.0",
     "mongodb": "^7.6.0",
-    "next": "CHECK_LOCKFILE",
+    "next": "16.3.8",
     "openapi-fetch": "^0.17.0",
     "openapi-typescript": "^7.13.0",
     "react": "19.2.8",
@@ -40,9 +39,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "CHECK_LOCKFILE",
+    "eslint-config-next": "16.3.8",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
 }
-```
