@@ -1,4 +1,3 @@
-```css
 @import "tailwindcss";
 
 @theme {
@@ -106,4 +105,4 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--ink-600);
 }
-```
+
